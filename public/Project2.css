@@ -1,0 +1,161 @@
+/* Base reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f9fc;
+    color: #2c3e50;
+}
+
+/* ✅ Only center content on home page */
+body.home-body {
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container used across pages */
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Home button link */
+.home-body .container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-body .container a:hover {
+    background-color: #1d6fa5;
+    color: #ffffff;
+}
+
+/* Forms */
+form {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Employee list */
+#employeeList {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.employee-card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-info {
+    flex-grow: 1;
+}
+
+.employee-actions button {
+    background-color: #e74c3c;
+    margin-left: 10px;
+}
+
+.employee-actions button.edit-btn {
+    background-color: #2ecc71;
+}
+
+.employee-actions button:hover {
+    opacity: 0.9;
+}
+
+/* Employee list */
+#employeeList {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Employee card spacing */
+.employee-card {
+    margin-bottom: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+    form, #employeeList {
+        width: 90%;
+    }
+
+    .employee-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .employee-actions {
+        margin-top: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+  
+    

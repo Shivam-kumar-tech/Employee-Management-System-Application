@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Project2.css">
+</head>
+<body>
+  <h2>Employee Management</h2>
+  <form id="createForm" action="/api/employees" method="POST">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="role" placeholder="Role" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Add Employee</button>
+  </form>
+
+  <div id="employeeList"></div>
+  <form action="/logout" method="GET">
+    <button type="submit">Logout</button>
+  </form>
+  
+
+  <script src="Project2client.js"></script>
+</body>
+</html>
+
